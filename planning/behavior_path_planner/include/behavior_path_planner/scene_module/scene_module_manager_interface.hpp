@@ -218,7 +218,7 @@ public:
 
   bool canLaunchNewModule() const { return observers_.size() < max_module_num_; }
 
-  bool launchNewModule(const BehaviorModuleOutput & previous_module_output)
+  virtual bool launchNewModule(const BehaviorModuleOutput & previous_module_output)
   {
     if (!canLaunchNewModule()) {
       return false;

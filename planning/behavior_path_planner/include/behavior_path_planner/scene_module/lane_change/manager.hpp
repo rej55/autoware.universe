@@ -35,18 +35,25 @@ class LaneChangeModuleManager : public SceneModuleManagerInterface
 public:
   LaneChangeModuleManager(
     rclcpp::Node * node, const std::string & name, const ModuleConfigParameters & config,
-    const Direction direction, const LaneChangeModuleType type);
+    const LaneChangeModuleType type);
 
   std::unique_ptr<SceneModuleInterface> createNewSceneModuleInstance() override;
 
   void updateModuleParams(const std::vector<rclcpp::Parameter> & parameters) override;
 
+  bool launchNewModule(const BehaviorModuleOutput & previous_module_output) override;
+
 protected:
   std::shared_ptr<LaneChangeParameters> parameters_;
 
-  Direction direction_;
-
   LaneChangeModuleType type_;
+
+  std::unique_ptr<SceneModuleInterface> left_ptr_;
+  std::unique_ptr<SceneModuleInterface> right_ptr_;
+
+private:
+  std::unique_ptr<SceneModuleInterface> createNewSceneModuleInstance(Direction direction);
+  void updateLaneChangeModules();
 };
 
 class AvoidanceByLaneChangeModuleManager : public LaneChangeModuleManager

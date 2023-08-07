@@ -170,34 +170,16 @@ BehaviorPathPlannerNode::BehaviorPathPlannerNode(const rclcpp::NodeOptions & nod
     }
 
     if (p.config_lane_change_left.enable_module) {
-      const std::string module_topic = "lane_change_left";
+      const std::string module_topic = "lane_change";
       auto manager = std::make_shared<LaneChangeModuleManager>(
-        this, module_topic, p.config_lane_change_left, route_handler::Direction::LEFT,
-        LaneChangeModuleType::NORMAL);
-      register_and_create_publisher(manager);
-    }
-
-    if (p.config_lane_change_right.enable_module) {
-      const std::string module_topic = "lane_change_right";
-      auto manager = std::make_shared<LaneChangeModuleManager>(
-        this, module_topic, p.config_lane_change_right, route_handler::Direction::RIGHT,
-        LaneChangeModuleType::NORMAL);
+        this, module_topic, p.config_lane_change_left, LaneChangeModuleType::NORMAL);
       register_and_create_publisher(manager);
     }
 
     if (p.config_ext_request_lane_change_right.enable_module) {
-      const std::string module_topic = "external_request_lane_change_right";
+      const std::string module_topic = "external_request_lane_change";
       auto manager = std::make_shared<LaneChangeModuleManager>(
-        this, module_topic, p.config_ext_request_lane_change_right, route_handler::Direction::RIGHT,
-        LaneChangeModuleType::EXTERNAL_REQUEST);
-      register_and_create_publisher(manager);
-    }
-
-    if (p.config_ext_request_lane_change_left.enable_module) {
-      const std::string module_topic = "external_request_lane_change_left";
-      auto manager = std::make_shared<LaneChangeModuleManager>(
-        this, module_topic, p.config_ext_request_lane_change_left, route_handler::Direction::LEFT,
-        LaneChangeModuleType::EXTERNAL_REQUEST);
+        this, module_topic, p.config_ext_request_lane_change_right, LaneChangeModuleType::EXTERNAL_REQUEST);
       register_and_create_publisher(manager);
     }
 

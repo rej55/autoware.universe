@@ -42,8 +42,8 @@ T get_parameter(rclcpp::Node * node, const std::string & ns)
 
 LaneChangeModuleManager::LaneChangeModuleManager(
   rclcpp::Node * node, const std::string & name, const ModuleConfigParameters & config,
-  const Direction direction, const LaneChangeModuleType type)
-: SceneModuleManagerInterface(node, name, config, {""}), direction_{direction}, type_{type}
+  const LaneChangeModuleType type)
+: SceneModuleManagerInterface(node, name, config, {""}), type_{type}
 {
   LaneChangeParameters p{};
 
@@ -135,14 +135,19 @@ LaneChangeModuleManager::LaneChangeModuleManager(
 
 std::unique_ptr<SceneModuleInterface> LaneChangeModuleManager::createNewSceneModuleInstance()
 {
+  return nullptr;
+}
+
+std::unique_ptr<SceneModuleInterface> LaneChangeModuleManager::createNewSceneModuleInstance(Direction direction)
+{
   if (type_ == LaneChangeModuleType::NORMAL) {
     return std::make_unique<LaneChangeInterface>(
       name_, *node_, parameters_, rtc_interface_ptr_map_,
-      std::make_unique<NormalLaneChange>(parameters_, LaneChangeModuleType::NORMAL, direction_));
+      std::make_unique<NormalLaneChange>(parameters_, LaneChangeModuleType::NORMAL, direction));
   }
   return std::make_unique<LaneChangeInterface>(
     name_, *node_, parameters_, rtc_interface_ptr_map_,
-    std::make_unique<ExternalRequestLaneChange>(parameters_, direction_));
+    std::make_unique<ExternalRequestLaneChange>(parameters_, direction));
 }
 
 void LaneChangeModuleManager::updateModuleParams(const std::vector<rclcpp::Parameter> & parameters)
@@ -160,10 +165,61 @@ void LaneChangeModuleManager::updateModuleParams(const std::vector<rclcpp::Param
   });
 }
 
+void LaneChangeModuleManager::updateLaneChangeModules()
+{
+  if (idle_module_ptr_) {
+    idle_module_ptr_->onEntry();
+  }
+
+  if (left_ptr_) {
+    left_ptr_->onEntry();
+  } else {
+    std::cout << "Create LANE_CHANGE_LEFT" << std::endl;
+    left_ptr_ = createNewSceneModuleInstance(Direction::LEFT);
+  }
+
+  if (right_ptr_) {
+    right_ptr_->onEntry();
+  } else {
+    right_ptr_ = createNewSceneModuleInstance(Direction::RIGHT);
+  }
+}
+
+bool LaneChangeModuleManager::launchNewModule(const BehaviorModuleOutput & previous_module_output)
+{
+  if (!canLaunchNewModule()) {
+    return false;
+  }
+
+  updateLaneChangeModules();
+
+  if (left_ptr_) {
+    if (idle_module_ptr_) {
+      right_ptr_ = std::move(idle_module_ptr_);
+    }
+    idle_module_ptr_ = std::move(left_ptr_);
+    if (isExecutionRequested(previous_module_output)) {
+      return true;
+    }
+  }
+
+  if (right_ptr_) {
+    if (idle_module_ptr_) {
+      left_ptr_ = std::move(idle_module_ptr_);
+    }
+    idle_module_ptr_ = std::move(right_ptr_);
+    if (isExecutionRequested(previous_module_output)) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
 AvoidanceByLaneChangeModuleManager::AvoidanceByLaneChangeModuleManager(
   rclcpp::Node * node, const std::string & name, const ModuleConfigParameters & config)
 : LaneChangeModuleManager(
-    node, name, config, Direction::NONE, LaneChangeModuleType::AVOIDANCE_BY_LANE_CHANGE)
+    node, name, config, LaneChangeModuleType::AVOIDANCE_BY_LANE_CHANGE)
 {
   using autoware_auto_perception_msgs::msg::ObjectClassification;
 
