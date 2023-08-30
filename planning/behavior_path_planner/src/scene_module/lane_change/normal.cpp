@@ -832,6 +832,7 @@ bool NormalLaneChange::getLaneChangePaths(
   const lanelet::ConstLanelets & current_lanes, const lanelet::ConstLanelets & target_lanes,
   Direction direction, LaneChangePaths * candidate_paths, const bool check_safety) const
 {
+  stop_watch_.tic("getLaneChangePaths");
   object_debug_.clear();
   if (current_lanes.empty() || target_lanes.empty()) {
     return false;
@@ -874,6 +875,7 @@ bool NormalLaneChange::getLaneChangePaths(
   candidate_paths->reserve(longitudinal_acc_sampling_values.size() * lateral_acc_sampling_num);
 
   const auto prepare_duration = calcPrepareDuration(current_lanes, target_lanes);
+  std::cout << "Get data: " << stop_watch_.toc("getLaneChangePaths", true) << std::endl;
 
   for (const auto & sampled_longitudinal_acc : longitudinal_acc_sampling_values) {
     // get path on original lanes
@@ -1324,6 +1326,7 @@ PathSafetyStatus NormalLaneChange::isLaneChangePathSafe(
   const utils::path_safety_checker::RSSparams & rss_params,
   CollisionCheckDebugMap & debug_data) const
 {
+  stop_watch_.tic("isLaneChangePathSafe");
   PathSafetyStatus path_safety_status;
 
   const auto & path = lane_change_path.path;
@@ -1337,11 +1340,13 @@ PathSafetyStatus NormalLaneChange::isLaneChangePathSafe(
   }
 
   const double & time_resolution = lane_change_parameters_->prediction_time_resolution;
-
+  std::cout << "Get data: " << stop_watch_.toc("isLaneChangePathSafe", true) << std::endl;
   const auto ego_predicted_path = utils::lane_change::convertToPredictedPath(
     lane_change_path, current_twist, current_pose, common_parameters, time_resolution);
   const auto debug_predicted_path =
     utils::lane_change::convertToPredictedPath(ego_predicted_path, time_resolution);
+  std::cout << "Convert to predicted path: " << stop_watch_.toc("isLaneChangePathSafe", true)
+            << std::endl;
 
   auto collision_check_objects = target_objects.target_lane;
 
@@ -1362,6 +1367,7 @@ PathSafetyStatus NormalLaneChange::isLaneChangePathSafe(
     const auto obj_predicted_paths = utils::path_safety_checker::getPredictedPathFromObj(
       obj, lane_change_parameters_->use_all_predicted_path);
     for (const auto & obj_path : obj_predicted_paths) {
+      stop_watch_.tic("checkCollision");
       if (!utils::path_safety_checker::checkCollision(
             path, ego_predicted_path, obj, obj_path, common_parameters, rss_params, 1.0,
             current_debug_data.second)) {
@@ -1373,7 +1379,9 @@ PathSafetyStatus NormalLaneChange::isLaneChangePathSafe(
         path_safety_status.is_object_coming_from_rear |=
           !utils::path_safety_checker::isTargetObjectFront(
             path, current_pose, common_parameters.vehicle_info, obj_polygon);
+        std::cout << "Is target object front: " << stop_watch_.toc("checkCollision") << std::endl;
       }
+      std::cout << "Check collision: " << stop_watch_.toc("checkCollision", true) << std::endl;
     }
     marker_utils::updateCollisionCheckDebugMap(
       debug_data, current_debug_data, path_safety_status.is_safe);
