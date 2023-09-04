@@ -709,7 +709,7 @@ LaneChangeTargetObjectIndices NormalLaneChange::filterObject(
     if (target_polygon && boost::geometry::intersects(target_polygon.value(), obj_polygon)) {
       // ignore static parked object that are in front of the ego vehicle in target lanes
       bool is_parked_object =
-        utils::lane_change::isParkedObject(target_path, route_handler, extended_object, 0.0, 0.0);
+        utils::lane_change::isParkedObject(target_path, route_handler, extended_object, 0.5, 0.5);
       if (is_parked_object && min_dist_ego_to_obj > min_dist_to_lane_changing_start) {
         continue;
       }
@@ -832,7 +832,6 @@ bool NormalLaneChange::getLaneChangePaths(
   const lanelet::ConstLanelets & current_lanes, const lanelet::ConstLanelets & target_lanes,
   Direction direction, LaneChangePaths * candidate_paths, const bool check_safety) const
 {
-  stop_watch_.tic("getLaneChangePaths");
   object_debug_.clear();
   if (current_lanes.empty() || target_lanes.empty()) {
     return false;
@@ -875,7 +874,6 @@ bool NormalLaneChange::getLaneChangePaths(
   candidate_paths->reserve(longitudinal_acc_sampling_values.size() * lateral_acc_sampling_num);
 
   const auto prepare_duration = calcPrepareDuration(current_lanes, target_lanes);
-  std::cout << "Get data: " << stop_watch_.toc("getLaneChangePaths", true) << std::endl;
 
   for (const auto & sampled_longitudinal_acc : longitudinal_acc_sampling_values) {
     // get path on original lanes
