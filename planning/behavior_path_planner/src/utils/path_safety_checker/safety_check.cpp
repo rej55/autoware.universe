@@ -351,6 +351,7 @@ std::vector<Polygon2d> getCollidedPolygons(
 
     const auto & lon_offset = std::max(rss_dist, min_lon_length) * hysteresis_factor;
     const auto & lat_margin = rss_parameters.lateral_distance_max_threshold * hysteresis_factor;
+    // TODO(watanabe) fix hard coding value
     const bool is_stopped_object = object_velocity < 0.3;
     const auto & extended_ego_polygon = is_object_front ? createExtendedPolygon(
                                                             ego_pose, ego_vehicle_info, lon_offset,
