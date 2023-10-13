@@ -190,13 +190,11 @@ struct CollisionCheckDebug
   Pose expected_obj_pose{};            ///< Predicted future pose of object.
   double rss_longitudinal{0.0};        ///< Longitudinal RSS measure.
   double inter_vehicle_distance{0.0};  ///< Distance between ego vehicle and object.
-  double extended_polygon_forward_lon_offset{
-    0.0};  ///< Forward longitudinal offset for extended polygon.
-  double extended_polygon_backward_lon_offset{
-    0.0};                                   ///< Backward longitudinal offset for extended polygon.
-  double extended_polygon_lat_offset{0.0};  ///< Lateral offset for extended polygon.
-  bool is_front{false};                     ///< True if object is in front of ego vehicle.
-  bool is_safe{false};                      ///< True if situation is deemed safe.
+  double forward_lon_offset{0.0};      ///< Forward longitudinal offset for extended polygon.
+  double backward_lon_offset{0.0};     ///< Backward longitudinal offset for extended polygon.
+  double lat_offset{0.0};              ///< Lateral offset for extended polygon.
+  bool is_front{false};                ///< True if object is in front of ego vehicle.
+  bool is_safe{false};                 ///< True if situation is deemed safe.
   std::vector<PoseWithVelocityStamped> ego_predicted_path;  ///< ego vehicle's predicted path.
   std::vector<PoseWithVelocityAndPolygonStamped> obj_predicted_path;  ///< object's predicted path.
   Polygon2d extended_ego_polygon{};  ///< Ego vehicle's extended collision polygon.

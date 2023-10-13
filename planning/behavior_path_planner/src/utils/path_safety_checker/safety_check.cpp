@@ -96,9 +96,9 @@ Polygon2d createExtendedPolygon(
   const double lat_offset = width / 2.0 + lat_margin;
 
   {
-    debug.extended_polygon_forward_lon_offset = forward_lon_offset;
-    debug.extended_polygon_backward_lon_offset = backward_lon_offset;
-    debug.extended_polygon_lat_offset = lat_offset;
+    debug.forward_lon_offset = forward_lon_offset;
+    debug.backward_lon_offset = backward_lon_offset;
+    debug.lat_offset = lat_offset;
   }
 
   const auto p1 =
@@ -152,9 +152,9 @@ Polygon2d createExtendedPolygon(
   const double right_lat_offset = min_y - lat_margin;
 
   {
-    debug.extended_polygon_forward_lon_offset = forward_lon_offset;
-    debug.extended_polygon_backward_lon_offset = backward_lon_offset;
-    debug.extended_polygon_lat_offset = (left_lat_offset + right_lat_offset) / 2;
+    debug.forward_lon_offset = forward_lon_offset;
+    debug.backward_lon_offset = backward_lon_offset;
+    debug.lat_offset = (left_lat_offset + right_lat_offset) / 2;
   }
 
   const auto p1 =
