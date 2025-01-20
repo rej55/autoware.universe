@@ -22,10 +22,17 @@ jobs:
           ref: main
           fetch-depth: 0
 
+      - name: Generate token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.PRIVATE_KEY }}
+
       - name: Set git config
         uses: autowarefoundation/autoware-github-actions/set-git-config@v1
         with:
-          token: ${{ inputs.token }}
+          token: ${{ steps.generate-token.outputs.token }}
 
       - name: Setup Python 3.x
         uses: actions/setup-python@v5
