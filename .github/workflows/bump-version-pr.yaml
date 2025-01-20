@@ -56,7 +56,7 @@ jobs:
           git commit -m "update CHANGELOG.rst"
           catkin_prepare_release -y --bump minor --no-push
           version=$(git describe --tags)
-          echo '::set-output name=version::${version}'
+          echo "version=${version}" >> $GITHUB_OUTPUT
         shell: bash
 
       - name: Create target branch
@@ -80,7 +80,7 @@ jobs:
           reviewers: ${{ inputs.pr-reviewers }}
           author: github-actions <github-actions@github.com>
           signoff: true
-          delete-branch: true
+          delete-branch: false
 
       - name: Check outputs
         run: |
