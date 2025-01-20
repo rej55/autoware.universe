@@ -2,6 +2,17 @@
 Changelog for package autoware_path_smoother
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat(motion_planning): use StringStamped in autoware_internal_debug_msgs (`#9742 <https://github.com/rej55/autoware.universe/issues/9742>`_)
+  feat(motion planning): use StringStamped in autoware_internal_debug_msgs
+* fix(autoware_path_smoother): fix bugprone-branch-clone (`#9697 <https://github.com/rej55/autoware.universe/issues/9697>`_)
+  * fix: bugprone-error
+  * fix: bugprone-error
+  ---------
+* Contributors: Takayuki Murooka, github-actions, kobayu858
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

@@ -2,6 +2,15 @@
 Changelog for package tier4_simulator_launch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* fix(tier4_simulator_launch): add use_validator argument to simulator launch (`#9634 <https://github.com/rej55/autoware.universe/issues/9634>`_)
+  * feat: add use_validator argument to simulator launch
+  * feat: set variables explicitly
+  ---------
+* Contributors: Taekjin LEE, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

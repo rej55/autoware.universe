@@ -2,6 +2,13 @@
 Changelog for package control_performance_analysis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in fil… (`#9857 <https://github.com/rej55/autoware.universe/issues/9857>`_)
+  feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files control/control_performance_analysis
+* Contributors: Vishal Chauhan, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

@@ -2,6 +2,34 @@
 Changelog for package system_monitor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* fix(system_monitor): fix bugprone-exception-escape (`#9781 <https://github.com/rej55/autoware.universe/issues/9781>`_)
+  * fix: bugprone-error
+  * fix: clippy
+  ---------
+* feat(system_monitor): check UDP network errors (`#9538 <https://github.com/rej55/autoware.universe/issues/9538>`_)
+  * feat(system_monitor): generalize logic for /proc/net/snmp
+  * feat(system_monitor): add UDP buf errors check
+  * fix calculation for errors per unit time at the first time
+  * style(pre-commit): autofix
+  * organize code
+  * style(pre-commit): autofix
+  * fix warnings
+  * remove unnecessary fmt::format
+  * organize code for metrics from /proc/net/snmp
+  * style(pre-commit): autofix
+  * separate ROS 2 parameters from constructor
+  * suppress log
+  * style(pre-commit): autofix
+  * fix bugprone-fold-init-type
+  * dummy commit to kick workflows
+  ---------
+  Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+  Co-authored-by: ito-san <57388357+ito-san@users.noreply.github.com>
+* Contributors: github-actions, iwatake, kobayu858
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

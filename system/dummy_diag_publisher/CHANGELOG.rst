@@ -2,6 +2,17 @@
 Changelog for package dummy_diag_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat(dummy_diag_publisher): update param setting (`#9946 <https://github.com/rej55/autoware.universe/issues/9946>`_)
+  * feat: update param setting
+  * style(pre-commit): autofix
+  * modify: delete unnecessary include
+  ---------
+  Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+* Contributors: TetsuKawa, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

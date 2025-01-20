@@ -2,6 +2,15 @@
 Changelog for package autoware_traffic_light_multi_camera_fusion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* chore(autoware_traffic_light_multi_camera_fusion): modify docs (`#9821 <https://github.com/rej55/autoware.universe/issues/9821>`_)
+  * fix docs
+  * add condition
+  ---------
+* Contributors: Masato Saeki, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

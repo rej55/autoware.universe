@@ -2,6 +2,17 @@
 Changelog for package autoware_control_evaluator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in fil… (`#9858 <https://github.com/rej55/autoware.universe/issues/9858>`_)
+  feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files evaluator/autoware_control_evaluator
+* fix(autoware_control_evaluator): fix bugprone-exception-escape (`#9630 <https://github.com/rej55/autoware.universe/issues/9630>`_)
+  * fix: bugprone-exception-escape
+  * fix: cpplint
+  ---------
+* Contributors: Vishal Chauhan, github-actions, kobayu858
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

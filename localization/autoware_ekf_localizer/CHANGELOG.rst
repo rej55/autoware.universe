@@ -2,6 +2,19 @@
 Changelog for package autoware_ekf_localizer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in fies localization/autoware_ekf_localizer (`#9860 <https://github.com/rej55/autoware.universe/issues/9860>`_)
+  Co-authored-by: SakodaShintaro <shintaro.sakoda@tier4.jp>
+* feat(ekf_localizer): check whether the initialpose has been set (`#9787 <https://github.com/rej55/autoware.universe/issues/9787>`_)
+  * check set intialpose
+  * update png
+  * style(pre-commit): autofix
+  ---------
+  Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+* Contributors: Vishal Chauhan, Yamato Ando, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

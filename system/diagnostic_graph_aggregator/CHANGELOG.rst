@@ -2,6 +2,13 @@
 Changelog for package diagnostic_graph_aggregator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* fix(diagnostic_graph_aggregator): remove unused message alias (`#8722 <https://github.com/rej55/autoware.universe/issues/8722>`_)
+  feat(diagnostic_graph_aggregator): remove unused message alias
+* Contributors: Takagi, Isamu, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

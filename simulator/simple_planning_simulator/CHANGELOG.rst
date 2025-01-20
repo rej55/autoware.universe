@@ -2,6 +2,16 @@
 Changelog for package simple_planning_simulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* chore(simple_planning_simulator): add maintainer (`#9934 <https://github.com/rej55/autoware.universe/issues/9934>`_)
+* fix(simple_planning_simulator): fix bugprone-branch-clone (`#9725 <https://github.com/rej55/autoware.universe/issues/9725>`_)
+  * fix: bugprone-error
+  * fix: build error
+  ---------
+* Contributors: Fumiya Watanabe, github-actions, kobayu858
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0
