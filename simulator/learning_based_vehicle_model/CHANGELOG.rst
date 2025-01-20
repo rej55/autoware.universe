@@ -2,8 +2,8 @@
 Changelog for package learning_based_vehicle_model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-20)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
 * fix(learning_based_vehicle_model): fix clang-diagnostic-delete-abstract-non-virtual-dtor (`#9506 <https://github.com/rej55/autoware.universe/issues/9506>`_)
 * Contributors: Yukinari Hisaki, github-actions

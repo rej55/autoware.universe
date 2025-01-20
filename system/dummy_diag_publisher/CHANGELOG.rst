@@ -2,8 +2,8 @@
 Changelog for package dummy_diag_publisher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-20)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
 * feat(dummy_diag_publisher): update param setting (`#9946 <https://github.com/rej55/autoware.universe/issues/9946>`_)
   * feat: update param setting

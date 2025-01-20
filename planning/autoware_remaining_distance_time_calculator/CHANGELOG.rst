@@ -2,8 +2,8 @@
 Changelog for package autoware_remaining_distance_time_calculator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-20)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
 * feat(remaining_distance_time_calculator): integrate generate_parameter_library (`#8826 <https://github.com/rej55/autoware.universe/issues/8826>`_)
   * add parameter description

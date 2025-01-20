@@ -2,8 +2,8 @@
 Changelog for package autoware_pointcloud_preprocessor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-20)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
 * feat(autoware_pointcloud_preprocessor): tier4_debug_msgs changed to autoware_internal_debug_msgs in autoware_pointcloud_preprocessor (`#9920 <https://github.com/rej55/autoware.universe/issues/9920>`_)
   feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files sensing/autoware_pointcloud_preprocessor

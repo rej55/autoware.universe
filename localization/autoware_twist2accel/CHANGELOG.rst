@@ -2,8 +2,8 @@
 Changelog for package autoware_twist2accel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-20)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
 * chore(autoware_twist2accel): remove an unused dependency (`#9881 <https://github.com/rej55/autoware.universe/issues/9881>`_)
   Removed an unused dependency

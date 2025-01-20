@@ -2,8 +2,8 @@
 Changelog for package system_monitor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-20)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
 * fix(system_monitor): fix bugprone-exception-escape (`#9781 <https://github.com/rej55/autoware.universe/issues/9781>`_)
   * fix: bugprone-error
