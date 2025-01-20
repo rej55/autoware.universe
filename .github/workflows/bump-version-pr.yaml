@@ -21,7 +21,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.base-version }}
+          ref: main
           fetch-depth: 0
 
       - name: Set git config
