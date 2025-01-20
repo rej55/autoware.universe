@@ -2,6 +2,19 @@
 Changelog for package autoware_velocity_smoother
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat(velocity_smoother): introduce diagnostics (`#9933 <https://github.com/rej55/autoware.universe/issues/9933>`_)
+  * feat(velocity_smoother): introduce diagnostics
+  * fix
+  ---------
+* feat(velocity_smoother): use autoware internal Stamped messages (`#9749 <https://github.com/rej55/autoware.universe/issues/9749>`_)
+  * feat(velocity_smoother): use autoware internal Stamped messages
+  * fix
+  ---------
+* Contributors: Takayuki Murooka, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

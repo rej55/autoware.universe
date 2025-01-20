@@ -2,6 +2,14 @@
 Changelog for package autoware_steer_offset_estimator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat(autoware_steer_offset_estimator)!: tier4_debug_msgs changed to autoware_internal_debug_msgs in autoware_steer_offset_estimator (`#9926 <https://github.com/rej55/autoware.universe/issues/9926>`_)
+  feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files vehicle/autoware_steer_offset_estimator
+  Co-authored-by: Ryohsuke Mitsudome <43976834+mitsudome-r@users.noreply.github.com>
+* Contributors: Vishal Chauhan, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

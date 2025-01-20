@@ -2,6 +2,16 @@
 Changelog for package autoware_freespace_planning_algorithms
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* fix(autoware_freespace_planning_algorithms): fix bugprone-errors (`#9670 <https://github.com/rej55/autoware.universe/issues/9670>`_)
+  * fix: bugprone-error
+  * fix: bugprone-error
+  ---------
+* build(autoware_freespace_planning_algorithms): increase test timeout to 2 mins (`#9639 <https://github.com/rej55/autoware.universe/issues/9639>`_)
+* Contributors: M. Fatih Cırıt, github-actions, kobayu858
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

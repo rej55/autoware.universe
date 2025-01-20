@@ -2,6 +2,12 @@
 Changelog for package autoware_interpolation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* fix(autoware_interpolation): remove clang compiler error (`#9711 <https://github.com/rej55/autoware.universe/issues/9711>`_)
+* Contributors: Ryuta Kambe, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

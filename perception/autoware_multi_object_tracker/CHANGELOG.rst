@@ -2,6 +2,58 @@
 Changelog for package autoware_multi_object_tracker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat: tier4_debug_msgs to autoware_internal_debug_msgs in files  perc… (`#9879 <https://github.com/rej55/autoware.universe/issues/9879>`_)
+  feat: tier4_debug_msgs to autoware_internal_debug_msgs in files  perception/autoware_multi_object_tracker
+* chore(autoware_multi_object_tracker): fix autoware univserse documentation page (`#9772 <https://github.com/rej55/autoware.universe/issues/9772>`_)
+  * feat: Add descriptions for confidence thresholds in multi_object_tracker_node schema
+  * feat: Update multi_object_tracker_node schema with confidence threshold descriptions
+  ---------
+* refactor(autoware_multi_object_tracker): define a new internal object class (`#9706 <https://github.com/rej55/autoware.universe/issues/9706>`_)
+  * feat: Add dynamic_object.hpp to object_model directory
+  * chore: Update autoware_perception_msgs include statements in association.hpp and dynamic_object.hpp
+  * fix: replace object message type to the DynamicObject type
+  * chore: Update autoware_perception_msgs include statements in association.hpp and dynamic_object.hpp
+  * chore: add channel index to the DynamicObjects
+  * Revert "chore: add channel index to the DynamicObjects"
+  This reverts commit c7e73f08a8d17b5b085dd330dbf187aabbec6879.
+  * fix: replace trackedobject in the process
+  * fix: Replace transformObjects with shapes::transformObjects for object transformation
+  * chore: add channel index to the DynamicObjects
+  * feat: separate shape related functions
+  * chore: clean up utils.hpp
+  * chore: Update function signatures to use DynamicObjectList instead of DynamicObjects
+  * chore: Add channel index to DynamicObject and DynamicObjectList
+  * chore: Refactor processor and debugger classes to remove channel_index parameter
+  * chore: Refactor multiple_vehicle_tracker.cpp and debugger.cpp
+  * Refactor object tracker classes to remove self_transform parameter
+  * Refactor object tracker classes to use shapes namespace for shape-related functions
+  * Refactor object tracker classes to use types.hpp for object model types
+  * Refactor object tracker classes to remove unused utils.hpp
+  * Refactor object tracker classes to use types.hpp for object model types
+  * chore: rename to types.cpp
+  * rename getDynamicObject to toDynamicObject
+  * Update perception/autoware_multi_object_tracker/lib/object_model/shapes.cpp
+  Co-authored-by: Yukihiro Saito <yukky.saito@gmail.com>
+  ---------
+  Co-authored-by: Yukihiro Saito <yukky.saito@gmail.com>
+* fix(autoware_multi_object_tracker): fix bugprone-errors (`#9651 <https://github.com/rej55/autoware.universe/issues/9651>`_)
+  fix: bugprone-errors
+* refactor(autoware_multi_object_tracker): add configurable tracker parameters (`#9621 <https://github.com/rej55/autoware.universe/issues/9621>`_)
+  * refactor(autoware_multi_object_tracker): add configurable tracker parameters
+  * style(pre-commit): autofix
+  * refactor(autoware_multi_object_tracker): remove default values from parameter declarations
+  * refactor(autoware_multi_object_tracker): update schema file
+  * style(pre-commit): autofix
+  * Update perception/autoware_multi_object_tracker/src/processor/processor.cpp
+  * Update perception/autoware_multi_object_tracker/src/processor/processor.cpp
+  ---------
+  Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+  Co-authored-by: Taekjin LEE <technolojin@gmail.com>
+* Contributors: Taekjin LEE, Vishal Chauhan, github-actions, jakor97, kobayu858
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

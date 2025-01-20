@@ -2,6 +2,22 @@
 Changelog for package autoware_pointcloud_preprocessor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat(autoware_pointcloud_preprocessor): tier4_debug_msgs changed to autoware_internal_debug_msgs in autoware_pointcloud_preprocessor (`#9920 <https://github.com/rej55/autoware.universe/issues/9920>`_)
+  feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files sensing/autoware_pointcloud_preprocessor
+* fix(autoware_pointcloud_preprocessor): fix autoware pointcloud preprocessor docs (`#9765 <https://github.com/rej55/autoware.universe/issues/9765>`_)
+  * fix downsample and passthrough
+  * fix: fix blockage-diag docs that page is not shown
+  ---------
+* fix(autoware_pointcloud_preprocessor): fix image display in distortion corrector (`#9761 <https://github.com/rej55/autoware.universe/issues/9761>`_)
+  fix: fix image display
+* fix(autoware_pointcloud_preprocessor): remove unused function mask() (`#9751 <https://github.com/rej55/autoware.universe/issues/9751>`_)
+* fix: enable to copy all information in pickup based pointcloud downsampler (`#9686 <https://github.com/rej55/autoware.universe/issues/9686>`_)
+  enable to copy all information in downsampler
+* Contributors: Ryuta Kambe, Vishal Chauhan, Yi-Hsiang Fang (Vivid), Yoshi Ri, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

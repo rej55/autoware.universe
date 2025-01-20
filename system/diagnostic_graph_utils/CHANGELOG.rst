@@ -2,6 +2,15 @@
 Changelog for package diagnostic_graph_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat(diagnostic_graph_utils): use StringStamped in autoware_internal_debug_msgs (`#9741 <https://github.com/rej55/autoware.universe/issues/9741>`_)
+  * feat(diagnostic_graph_utils): use StringStamped in autoware_internal_debug_msgs
+  * fix
+  ---------
+* Contributors: Takayuki Murooka, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

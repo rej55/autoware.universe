@@ -2,6 +2,12 @@
 Changelog for package autoware_bezier_sampler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* feat(goal_planner): add bezier based pull over planner (`#9642 <https://github.com/rej55/autoware.universe/issues/9642>`_)
+* Contributors: Mamoru Sobue, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

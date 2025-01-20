@@ -2,6 +2,14 @@
 Changelog for package dummy_infrastructure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
+* fix(dummy_infrastructure): fix bugprone-reserved-identifier (`#9919 <https://github.com/rej55/autoware.universe/issues/9919>`_)
+  Co-authored-by: kobayu858 <yutaro.kobayashi@tier4.jp>
+* fix(dummy_infrastructure): schema file name (`#8249 <https://github.com/rej55/autoware.universe/issues/8249>`_)
+* Contributors: Amadeusz Szymko, Ryohsuke Mitsudome, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Revert "chore(package.xml): bump version to 0.39.0 (`#9587 <https://github.com/autowarefoundation/autoware.universe/issues/9587>`_)"
