@@ -64,7 +64,7 @@ jobs:
           git checkout origin/main
           git checkout -b tmp/chore/bump_version
           git merge tmp/chore/bump_version_base
-          git push origin tmp/chore/bump_version_base
+          git push origin tmp/chore/bump_version
         shell: bash
 
       - name: Create PR
