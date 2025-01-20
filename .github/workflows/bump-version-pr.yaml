@@ -3,8 +3,6 @@ name: bump-version-pr
 on:
   workflow_dispatch:
     inputs:
-      base-version:
-        description: ""
       pr-assignees:
         description: ""
         required: false
@@ -21,22 +19,34 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ inputs.base-version }}
+          ref: main
           fetch-depth: 0
+
+      - name: Generate token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.PRIVATE_KEY }}
 
       - name: Set git config
         uses: autowarefoundation/autoware-github-actions/set-git-config@v1
         with:
-          token: ${{ inputs.token }}
+          token: ${{ steps.generate-token.outputs.token }}
+
+      - name: Setup Python 3.x
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
 
       - name: Install dependencies
-        run: sudo apt-get install -y python3-catkin-tools
+        run: pip3 install -U catkin_tools
         shell: bash
 
       - name: Bump version from humble branch
         id: bump-version-from-humble-branch
         run: |
-          git fetch origin ${{ inputs.base-version }}
+          git fetch origin --tags
           git checkout origin/humble
           git checkout -b tmp/chore/bump_version_base
           git fetch origin main
@@ -46,7 +56,7 @@ jobs:
           git commit -m "update CHANGELOG.rst"
           catkin_prepare_release -y --bump minor --no-push
           version=$(git describe --tags)
-          echo '::set-output name=version::${version}'
+          echo "version=${version}" >> $GITHUB_OUTPUT
         shell: bash
 
       - name: Create target branch
@@ -54,20 +64,14 @@ jobs:
           git checkout origin/main
           git checkout -b tmp/chore/bump_version
           git merge tmp/chore/bump_version_base
-          git push origin tmp/chore/bump_version_base
+          git push origin tmp/chore/bump_version
         shell: bash
-
-      - name: Generate changelog
-        id: generate-changelog
-        uses: autowarefoundation/autoware-github-actions/generate-changelog@v1
-        with:
-          git-cliff-args: origin/${{ inputs.base-branch }}..HEAD
 
       - name: Create PR
         id: create-pr
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ inputs.token }}
+          token: ${{ steps.generate-token.outputs.token }}
           base: main
           branch: tmp/chore/bump_version
           title: "Bump version to ${{ steps.bump-version-from-humble-branch.outputs.version }}"
