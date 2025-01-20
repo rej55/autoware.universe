@@ -3,8 +3,6 @@ name: bump-version-pr
 on:
   workflow_dispatch:
     inputs:
-      base-version:
-        description: ""
       pr-assignees:
         description: ""
         required: false
@@ -36,7 +34,7 @@ jobs:
       - name: Bump version from humble branch
         id: bump-version-from-humble-branch
         run: |
-          git fetch origin ${{ inputs.base-version }}
+          git fetch origin --tags
           git checkout origin/humble
           git checkout -b tmp/chore/bump_version_base
           git fetch origin main
@@ -56,12 +54,6 @@ jobs:
           git merge tmp/chore/bump_version_base
           git push origin tmp/chore/bump_version_base
         shell: bash
-
-      - name: Generate changelog
-        id: generate-changelog
-        uses: autowarefoundation/autoware-github-actions/generate-changelog@v1
-        with:
-          git-cliff-args: origin/${{ inputs.base-branch }}..HEAD
 
       - name: Create PR
         id: create-pr
