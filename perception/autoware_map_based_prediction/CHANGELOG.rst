@@ -2,8 +2,8 @@
 Changelog for package autoware_map_based_prediction
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-20)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/chore/bump_version_base
 * fix(map_based_prediction): fix unintentional accumulation of lanelets (`#9950 <https://github.com/rej55/autoware.universe/issues/9950>`_)
   add clear before insert
