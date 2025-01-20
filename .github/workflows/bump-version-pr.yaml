@@ -71,7 +71,7 @@ jobs:
         id: create-pr
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ inputs.token }}
+          token: ${{ steps.generate-token.outputs.token }}
           base: main
           branch: tmp/chore/bump_version
           title: "Bump version to ${{ steps.bump-version-from-humble-branch.outputs.version }}"
