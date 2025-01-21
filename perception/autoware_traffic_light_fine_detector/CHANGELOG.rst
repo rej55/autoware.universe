@@ -2,8 +2,8 @@
 Changelog for package autoware_traffic_light_fine_detector
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-21)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * chore(autoware_traffic_light_fine_detector): modify docs and related params (`#9818 <https://github.com/rej55/autoware.universe/issues/9818>`_)
   * modify readme and related params

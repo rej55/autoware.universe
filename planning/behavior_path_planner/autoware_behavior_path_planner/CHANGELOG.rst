@@ -2,8 +2,8 @@
 Changelog for package autoware_behavior_path_planner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-21)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat(autoware_planning_test_manager): remove dependency of tier4_planning_msgs::msg::LateralOffset (`#9967 <https://github.com/rej55/autoware.universe/issues/9967>`_)
   * feat(autoware_planning_test_manager): remove dependency of tier4_planning_msgs::msg::LateralOffset

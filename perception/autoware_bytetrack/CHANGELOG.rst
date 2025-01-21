@@ -2,8 +2,8 @@
 Changelog for package autoware_bytetrack
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-21)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * fix(autoware_bytetrack): fix bugprone-reserved-identifier (`#9647 <https://github.com/rej55/autoware.universe/issues/9647>`_)
   fix: bugprone-reserved-identifier
