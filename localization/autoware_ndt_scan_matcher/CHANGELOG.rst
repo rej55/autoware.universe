@@ -2,8 +2,8 @@
 Changelog for package autoware_ndt_scan_matcher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat: tier4_debug_msgs changed to autoware-internal_debug_msgs in files localization/autoware_ndt_scan_matcher (`#9861 <https://github.com/rej55/autoware.universe/issues/9861>`_)
   Co-authored-by: SakodaShintaro <shintaro.sakoda@tier4.jp>

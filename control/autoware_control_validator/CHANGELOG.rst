@@ -2,8 +2,8 @@
 Changelog for package autoware_control_validator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat:  tier4_debug_msgs to autoware_internal_debug_msgs in file contr… (`#9837 <https://github.com/rej55/autoware.universe/issues/9837>`_)
   feat:  tier4_debug_msgs to autoware_internal_debug_msgs in file control/autoware_control_validator

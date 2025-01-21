@@ -2,8 +2,8 @@
 Changelog for package autoware_pose2twist
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files localization/autoware_pose2twist (`#9866 <https://github.com/rej55/autoware.universe/issues/9866>`_)
 * Contributors: Vishal Chauhan, github-actions

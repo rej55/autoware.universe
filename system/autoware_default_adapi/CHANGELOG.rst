@@ -2,8 +2,8 @@
 Changelog for package autoware_default_adapi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * fix(obstacle_stop_planner): migrate planning factor (`#9939 <https://github.com/rej55/autoware.universe/issues/9939>`_)
   * fix(obstacle_stop_planner): migrate planning factor

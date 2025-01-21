@@ -2,8 +2,8 @@
 Changelog for package dummy_infrastructure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * fix(dummy_infrastructure): fix bugprone-reserved-identifier (`#9919 <https://github.com/rej55/autoware.universe/issues/9919>`_)
   Co-authored-by: kobayu858 <yutaro.kobayashi@tier4.jp>

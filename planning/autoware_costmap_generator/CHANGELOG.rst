@@ -2,8 +2,8 @@
 Changelog for package autoware_costmap_generator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat(autoware_costmap_generator): tier4_debug_msgs changed to autoware_internal-debug_msgs in autoware_costmap_generator (`#9901 <https://github.com/rej55/autoware.universe/issues/9901>`_)
   feat: tier4_debug_msgs changed to autoware_internal-debug_msgs in files planning/autoware_costmap_generator

@@ -2,8 +2,8 @@
 Changelog for package autoware_path_sampler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat(motion_planning): use StringStamped in autoware_internal_debug_msgs (`#9742 <https://github.com/rej55/autoware.universe/issues/9742>`_)
   feat(motion planning): use StringStamped in autoware_internal_debug_msgs

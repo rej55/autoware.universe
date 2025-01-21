@@ -2,8 +2,8 @@
 Changelog for package autoware_tensorrt_yolox
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * fix(autoware_tensorrt_yolox): modify tensorrt_yolox_node name (`#9156 <https://github.com/rej55/autoware.universe/issues/9156>`_)
 * refactor(autoware_tensorrt_common): multi-TensorRT compatibility & tensorrt_common as unified lib for all perception components (`#9762 <https://github.com/rej55/autoware.universe/issues/9762>`_)

@@ -2,8 +2,8 @@
 Changelog for package autoware_ekf_localizer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in fies localization/autoware_ekf_localizer (`#9860 <https://github.com/rej55/autoware.universe/issues/9860>`_)
   Co-authored-by: SakodaShintaro <shintaro.sakoda@tier4.jp>

@@ -2,8 +2,8 @@
 Changelog for package control_performance_analysis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in fil… (`#9857 <https://github.com/rej55/autoware.universe/issues/9857>`_)
   feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files control/control_performance_analysis

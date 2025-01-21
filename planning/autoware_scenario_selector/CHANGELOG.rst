@@ -2,8 +2,8 @@
 Changelog for package autoware_scenario_selector
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat(autoware_scenario_selector): tier4_debug_msgs changed to autoware_internal_debug_msgs in autoware_scenario_selector (`#9914 <https://github.com/rej55/autoware.universe/issues/9914>`_)
   feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files  planning/autoware_scenario_selector

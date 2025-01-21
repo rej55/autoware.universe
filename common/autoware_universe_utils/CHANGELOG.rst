@@ -2,8 +2,8 @@
 Changelog for package autoware_universe_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * refactor(autoware_universe_utils): add missing 's' in the class of diagnostics_interface (`#9777 <https://github.com/rej55/autoware.universe/issues/9777>`_)
 * feat(behavior_path_planner): use autoware internal stamped messages (`#9750 <https://github.com/rej55/autoware.universe/issues/9750>`_)

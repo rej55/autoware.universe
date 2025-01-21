@@ -2,8 +2,8 @@
 Changelog for package autoware_traffic_light_visualization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * fix(autoware_traffic_light_visualization): fix bugprone-branch-clone (`#9668 <https://github.com/rej55/autoware.universe/issues/9668>`_)
   fix: bugprone-error

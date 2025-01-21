@@ -2,8 +2,8 @@
 Changelog for package autoware_objects_of_interest_marker_interface
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2025-01-21)
+------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * fix(autoware_objects_of_interest_marker_interface): fix bugprone-branch-clone (`#9671 <https://github.com/rej55/autoware.universe/issues/9671>`_)
 * Contributors: github-actions, kobayu858
