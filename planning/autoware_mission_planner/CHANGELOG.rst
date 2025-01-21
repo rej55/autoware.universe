@@ -2,6 +2,15 @@
 Changelog for package autoware_mission_planner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
+* feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in fil… (`#9904 <https://github.com/rej55/autoware.universe/issues/9904>`_)
+  feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files planning/autoware_mission_planner
+* docs(autoware_mission_planner): added odometry input in README.md (`#7281 <https://github.com/rej55/autoware.universe/issues/7281>`_)
+  added odometry input in README.md
+* Contributors: Kirill Glinskiy, Vishal Chauhan, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0
