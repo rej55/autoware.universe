@@ -2,6 +2,28 @@
 Changelog for package autoware_default_adapi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
+* fix(obstacle_stop_planner): migrate planning factor (`#9939 <https://github.com/rej55/autoware.universe/issues/9939>`_)
+  * fix(obstacle_stop_planner): migrate planning factor
+  * fix(autoware_default_adapi): add coversion map
+  ---------
+* feat(planning_factor)!: remove velocity_factor, steering_factor and introduce planning_factor (`#9927 <https://github.com/rej55/autoware.universe/issues/9927>`_)
+  Co-authored-by: Satoshi OTA <44889564+satoshi-ota@users.noreply.github.com>
+  Co-authored-by: Ryohsuke Mitsudome <43976834+mitsudome-r@users.noreply.github.com>
+  Co-authored-by: satoshi-ota <satoshi.ota928@gmail.com>
+* feat(autoware_default_adapi): release adapi v1.6.0 (`#9704 <https://github.com/rej55/autoware.universe/issues/9704>`_)
+  * feat: reject clearing route during autonomous mode
+  * feat: modify check and relay door service
+  * fix door condition
+  * fix error and add option
+  * update v1.6.0
+  ---------
+* fix(autoware_default_adapi): fix bugprone-branch-clone (`#9726 <https://github.com/rej55/autoware.universe/issues/9726>`_)
+  fix: bugprone-error
+* Contributors: Mamoru Sobue, Satoshi OTA, Takagi, Isamu, github-actions, kobayu858
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0
