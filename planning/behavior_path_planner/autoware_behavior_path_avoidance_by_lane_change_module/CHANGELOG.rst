@@ -2,8 +2,8 @@
 Changelog for package autoware_behavior_path_avoidance_by_lane_change_module
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-21)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * refactor(behavior_path_planner): common test functions (`#9963 <https://github.com/rej55/autoware.universe/issues/9963>`_)
   * feat: common test code in behavior_path_planner

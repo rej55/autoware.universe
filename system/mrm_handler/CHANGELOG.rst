@@ -2,8 +2,8 @@
 Changelog for package mrm_handler
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-21)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * fix(mrm_handler): simplify hazard command choice (`#9929 <https://github.com/rej55/autoware.universe/issues/9929>`_)
 * Contributors: Ryuta Kambe, github-actions

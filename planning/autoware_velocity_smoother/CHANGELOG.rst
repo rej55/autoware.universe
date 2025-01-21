@@ -2,8 +2,8 @@
 Changelog for package autoware_velocity_smoother
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-21)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat(velocity_smoother): introduce diagnostics (`#9933 <https://github.com/rej55/autoware.universe/issues/9933>`_)
   * feat(velocity_smoother): introduce diagnostics

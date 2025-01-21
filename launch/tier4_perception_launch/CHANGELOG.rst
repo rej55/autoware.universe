@@ -2,8 +2,8 @@
 Changelog for package tier4_perception_launch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-21)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat(autoware_object_merger, autoware_tracking_object_merger): enable anonymized node names to be configurable (`#9733 <https://github.com/rej55/autoware.universe/issues/9733>`_)
   feat: enable anonymized node names to be configurable

@@ -2,8 +2,8 @@
 Changelog for package autoware_multi_object_tracker
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-21)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * feat: tier4_debug_msgs to autoware_internal_debug_msgs in files  perc… (`#9879 <https://github.com/rej55/autoware.universe/issues/9879>`_)
   feat: tier4_debug_msgs to autoware_internal_debug_msgs in files  perception/autoware_multi_object_tracker

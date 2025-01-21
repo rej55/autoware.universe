@@ -2,8 +2,8 @@
 Changelog for package simple_planning_simulator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-21)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * chore(simple_planning_simulator): add maintainer (`#9934 <https://github.com/rej55/autoware.universe/issues/9934>`_)
 * fix(simple_planning_simulator): fix bugprone-branch-clone (`#9725 <https://github.com/rej55/autoware.universe/issues/9725>`_)

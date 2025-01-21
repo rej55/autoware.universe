@@ -2,8 +2,8 @@
 Changelog for package perception_online_evaluator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.41.0 (2025-01-21)
+-------------------
 * Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
 * fix(perception_online_evaluator): fix bugprone-branch-clone (`#9631 <https://github.com/rej55/autoware.universe/issues/9631>`_)
   fix: bugprone-branch-clone
