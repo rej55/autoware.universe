@@ -2,6 +2,19 @@
 Changelog for package autoware_detected_object_validation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
+* feat(autoware_detected_object_validation): tier4_debug_msgs changed to autoware_internal_debug_msgs in fil… (`#9871 <https://github.com/rej55/autoware.universe/issues/9871>`_)
+  feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files perception/autoware_detected_object_validation
+  Co-authored-by: Ryohsuke Mitsudome <43976834+mitsudome-r@users.noreply.github.com>
+* feat(autoware_detected_object_validation): set validate distance in the obstacle pointcloud based validator  (`#9663 <https://github.com/rej55/autoware.universe/issues/9663>`_)
+  * chore: add validate_max_distance_m parameter for obstacle_pointcloud_based_validator
+  * chore: optimize object distance validation in obstacle_pointcloud_validator
+  * chore: add validate_max_distance_m parameter for obstacle_pointcloud_based_validator
+  ---------
+* Contributors: Taekjin LEE, Vishal Chauhan, github-actions
+
 0.40.0 (2024-12-12)
 -------------------
 * Merge branch 'main' into release-0.40.0

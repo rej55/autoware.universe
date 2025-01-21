@@ -2,6 +2,32 @@
 Changelog for package autoware_probabilistic_occupancy_grid_map
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge remote-tracking branch 'origin/main' into tmp/bot/bump_version_base
+* feat(autoware_probabilistic_occupancy_grid_map): tier4_debug_msgs changed to autoware_internal_debug_msgs in autoware_probabilistic_occupancy_grid_map (`#9895 <https://github.com/rej55/autoware.universe/issues/9895>`_)
+  feat: tier4_debug_msgs changed to autoware_internal_debug_msgs in files perception/autoware_probabilistic_occupancy_grid_map
+  Co-authored-by: Ryohsuke Mitsudome <43976834+mitsudome-r@users.noreply.github.com>
+* fix(perception): fix perception docs (`#9766 <https://github.com/rej55/autoware.universe/issues/9766>`_)
+  * fix: fix perception docs
+  * fix: fix missing parameter in schema
+  * Update perception/autoware_object_merger/schema/data_association_matrix.schema.json
+  Co-authored-by: Taekjin LEE <technolojin@gmail.com>
+  * Update perception/autoware_object_merger/schema/data_association_matrix.schema.json
+  Co-authored-by: Taekjin LEE <technolojin@gmail.com>
+  * Update perception/autoware_object_merger/schema/data_association_matrix.schema.json
+  Co-authored-by: Taekjin LEE <technolojin@gmail.com>
+  * Update perception/autoware_object_merger/schema/data_association_matrix.schema.json
+  Co-authored-by: Taekjin LEE <technolojin@gmail.com>
+  * style(pre-commit): autofix
+  * chore: seperate paramters for different nodes
+  ---------
+  Co-authored-by: Taekjin LEE <technolojin@gmail.com>
+  Co-authored-by: pre-commit-ci[bot] <66853113+pre-commit-ci[bot]@users.noreply.github.com>
+* fix(autoware_probabilistic_occupancy_grid_map): fix bugprone-branch-clone (`#9652 <https://github.com/rej55/autoware.universe/issues/9652>`_)
+  fix: bugprone-error
+* Contributors: Vishal Chauhan, Yi-Hsiang Fang (Vivid), github-actions, kobayu858
+
 0.40.0 (2024-12-12)
 -------------------
 * Revert "chore(package.xml): bump version to 0.39.0 (`#9587 <https://github.com/autowarefoundation/autoware.universe/issues/9587>`_)"
